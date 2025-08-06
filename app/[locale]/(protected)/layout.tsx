@@ -22,7 +22,7 @@ const LayoutProtected = async ({
   }
   return (
     <LayoutProvider>
-      <ThemeCustomize />
+      {process.env.NODE_ENV === "development" && <ThemeCustomize />}
       <BackOfficeHeader />
       <BackOfficeSidebar />
       <LayoutContentProvider>{children}</LayoutContentProvider>
