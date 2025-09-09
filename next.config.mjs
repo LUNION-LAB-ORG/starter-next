@@ -8,6 +8,14 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
+        protocol: "http",
+        hostname: "localhost:8081",
+      },
+      {
+        protocol: "https",
+        hostname: "ambassade-tchad.turbodeliveryapp.com",
+      },
+      {
         protocol: "https",
         hostname: "api.lorem.space",
       },
